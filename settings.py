@@ -2,8 +2,10 @@ class screen_settings():
     screen_width = 500
     screen_height = 500
     screen_title = '3d Renderer by Olivier'
-    screen_fps = 60
+    screen_fps = 144
     screem_background_color = (255, 255, 255)
+    x_max = 5
+    y_max = 5
 
 class camera_settings():
     camera_distance_from_detection_board = 20
@@ -11,7 +13,7 @@ class camera_settings():
     camera_default_orientation = (0, 0, 0)
 
     camera_movement_speed = 0.1
-    camera_look_speed = 0.03
+    camera_look_speed = 0.01
 
     display_surface_position = (0, 0, 10)
 

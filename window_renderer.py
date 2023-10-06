@@ -2,6 +2,8 @@ import pygame as pg
 from settings import screen_settings
 import sys
 
+
+
 class window_renderer():
     def __init__(self):
         self.screen_width = screen_settings.screen_width
@@ -35,3 +37,9 @@ class window_renderer():
     def clear_screen(self):
         #Background updating
         self.screen.fill(self.screen_background_color)
+
+    def draw_line(self, A, B, color):
+        pg.draw.line(self.screen, color, A, B, 3)
+        pg.display.flip()
+
+renderer = window_renderer()
